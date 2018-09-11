@@ -1,0 +1,9 @@
+<div *ngIf="name">
+  <h3>Welcome, {{name}}!</h3>
+  <button (click)="logout()">Logout</button>
+  <p><a routerLink="/profile" routerLinkActive="active">Profile</a></p>
+</div>
+
+<div *ngIf="!name">
+  <button (click)="login()">Login</button>
+</div>
